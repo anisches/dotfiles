@@ -22,7 +22,10 @@ return {
       opts = {},
     },
   },
-  opts = overrides.treesitter,
+
+    opts = function()
+      return require "nvchad.configs.treesitter"
+    end,
   build = ":TSUpdate",
   init = function(plugin)
     -- perf: make treesitter queries available at startup.
