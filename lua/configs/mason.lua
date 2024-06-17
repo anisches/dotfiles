@@ -1,4 +1,4 @@
-local mason_tool_installer = require("mason-tool-installer")
+local mason_tool_installer = require "mason-tool-installer"
 
 local options = {
   ensure_installed = {
@@ -11,18 +11,18 @@ local options = {
     "lua_ls",
     "pyright",
     "yamlls",
+    "dockerls",
   }, -- not an option from mason.nvim
-  mason_tool_installer.setup({
+  mason_tool_installer.setup {
     ensure_installed = {
       "prettier", -- prettier formatter
-      "stylua",   -- lua formatter
-      "isort",    -- python formatter
-      "black",    -- python formatter
+      "stylua", -- lua formatter
+      "isort", -- python formatter
+      "black", -- python formatter
       "pylint",
       "eslint_d",
     },
-  }),
-
+  },
 
   PATH = "skip",
 

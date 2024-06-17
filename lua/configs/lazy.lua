@@ -1,4 +1,5 @@
 return {
+
   defaults = { lazy = true },
   install = { colorscheme = { "nvchad" } },
 
@@ -10,6 +11,7 @@ return {
       not_loaded = "",
     },
   },
+
 
   performance = {
     rtp = {

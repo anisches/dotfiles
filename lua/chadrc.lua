@@ -2,11 +2,12 @@
 -- https://github.com/NvChad/NvChad/blob/v2.5/lua/nvconfig.lua
 
 ---@type ChadrcConfig
+
 local M = {}
 M.ui = {
-  theme_toggle = { "solarized_osaka", "everforest" },
+  theme_toggle = { "solarized_dark", "everforest" },
   transparency = true,
-  theme = "solarized_osaka",
+  theme = "solarized_dark",
   statusline = {
     separator_style = "round",
   },

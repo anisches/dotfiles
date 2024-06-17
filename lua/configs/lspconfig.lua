@@ -14,6 +14,7 @@ local servers = {
   "rust_analyzer",
   "tailwindcss",
   "yamlls",
+  "dockerls",
 }
 
 -- lsps with default config
