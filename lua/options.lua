@@ -12,8 +12,12 @@ opt.relativenumber = true
 
 --mouse disable
 opt.mouse = ""
-
+opt.termguicolors = true
 -- undercurl
 --BUG: not working
 cmd [[let &t_Cs = "\e[4:3m]"]]
 cmd [[let &t_Ce = "\e[4:3m]"]]
+
+
+
+

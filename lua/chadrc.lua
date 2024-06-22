@@ -5,9 +5,17 @@
 
 local M = {}
 M.ui = {
-  theme_toggle = { "solarized_dark", "everforest" },
+
+  tabufline = {
+    enabled = true,
+    order = { "treeOffset", "buffers", "tabs" },
+  },
+
+  theme_toggle = { "solarized_osaka", "everforest" },
+
   transparency = true,
-  theme = "solarized_dark",
+  theme = "solarized_osaka",
+
   statusline = {
     separator_style = "round",
   },

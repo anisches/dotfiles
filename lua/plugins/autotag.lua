@@ -1,7 +1,11 @@
 return {
   "windwp/nvim-ts-autotag",
-  after = "nvim-treesitter",
+  dependencies = "nvim-treesitter/nvim-treesitter",
   config = function()
-    require("nvim-ts-autotag").setup()
+    require("nvim-ts-autotag").setup {
+      -- your config
+    }
   end,
+  lazy = true,
+  event = "VeryLazy",
 }

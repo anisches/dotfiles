@@ -25,13 +25,3 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
-
-for _, lsp in ipairs(servers) do
-  if lspconfig[lsp] == "tailwindcss" then
-    -- warp the attach function
-    on_attach = function(_, bufnr)
-      require("tailwindcss-colors").buf_attach(bufnr)
-      on_attach(_, bufnr)
-    end
-  end
-end

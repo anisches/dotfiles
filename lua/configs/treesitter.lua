@@ -16,7 +16,7 @@ local options = {
   },
 
   highlight = {
-    enable = true,
+    enable = false,
     use_languagetree = true,
   },
 
