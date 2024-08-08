@@ -15,6 +15,8 @@ local servers = {
   "tailwindcss",
   "yamlls",
   "dockerls",
+  "svelte",
+  "pylint",
 }
 
 -- lsps with default config

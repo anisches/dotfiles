@@ -12,6 +12,7 @@ local options = {
     "pyright",
     "yamlls",
     "dockerls",
+    "svelte",
   }, -- not an option from mason.nvim
   mason_tool_installer.setup {
     ensure_installed = {

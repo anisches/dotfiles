@@ -5,13 +5,11 @@
 
 local M = {}
 M.ui = {
-
   tabufline = {
+    show_numbers = true,
     enabled = true,
     order = { "treeOffset", "buffers", "tabs" },
   },
-
-  theme_toggle = { "solarized_osaka", "everforest" },
 
   transparency = true,
   theme = "solarized_osaka",
@@ -19,11 +17,13 @@ M.ui = {
   statusline = {
     separator_style = "round",
   },
-}
 
-require("nvim-treesitter.configs").setup {
-  autotag = {
-    enable = true,
+  hl_override = {
+    CursorLine = {
+      bg = "#39505b",
+    },
+    Comment = { italic = true },
+    ["@comment"] = { italic = true },
   },
 }
 

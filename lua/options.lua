@@ -9,15 +9,9 @@ local opt = vim.opt
 local cmd = vim.cmd
 
 opt.relativenumber = true
+opt.termguicolors = true
 
 --mouse disable
 opt.mouse = ""
-opt.termguicolors = true
--- undercurl
---BUG: not working
-cmd [[let &t_Cs = "\e[4:3m]"]]
-cmd [[let &t_Ce = "\e[4:3m]"]]
 
-
-
-
+opt.cursorline = true

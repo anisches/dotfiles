@@ -39,6 +39,8 @@ return {
         "pyright",
         "yamlls",
         "black",
+        "mypy",
+        "ruff",
       },
     }
 
